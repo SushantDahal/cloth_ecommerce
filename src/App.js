@@ -27,6 +27,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Checkout from "./Components/Checkout";
+import Login from "./Components/Login";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/basket" element={<CheckoutPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </Router>
     </div>
@@ -57,5 +59,12 @@ function HomePage() {
     </>
   );
 }
-
+function LoginPage() {
+  return (
+    <>
+      <Navbar />
+      <Login />
+    </>
+  );
+}
 export default App;

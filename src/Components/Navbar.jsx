@@ -25,10 +25,12 @@ const Navbar = () => {
             <SearchIcon className="bg-[#ff9f00] text-black" />
           </div>
           <div className="flex justify-evenly items-center">
-            <div className=" flex flex-col mx-2 text-white">
-              <span className="text-xs">Hello Guest</span>
-              <span className="font-bold">Sign in</span>
-            </div>
+            <Link to="/login">
+              <div className=" flex flex-col mx-2 text-white">
+                <span className="text-xs">Hello Guest</span>
+                <span className="font-bold">Sign in</span>
+              </div>
+            </Link>
             <div className=" flex flex-col mx-2 text-white">
               <span className="text-xs">Your</span>
               <span className="font-bold">Shop</span>

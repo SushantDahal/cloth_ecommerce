@@ -18,11 +18,11 @@ const Navbar = () => {
             </div>
           </Link>
           <div className=" flex flex-1">
-            <input
+            {/* <input
               type="text "
               className="w-[20%] ml-10  text-black h-5 p-3 header_searchInput"
-            />
-            <SearchIcon className="bg-[#ff9f00] text-black" />
+            /> */}
+            {/* <SearchIcon className="bg-[#ff9f00] text-black" /> */}
           </div>
           <div className="flex justify-evenly items-center">
             <Link to="/login">
